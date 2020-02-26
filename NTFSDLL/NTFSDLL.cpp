@@ -58,6 +58,8 @@ bool getMBRInf(std::string NameDisk, NTFS* volume) {
 	return true;
 }
 
+//This from master
+
 void showFAT32MBR(NTFS volume) {
 	printf("NTFS Disk Information: \n");
 	printf("Bytes per sector: %d\n", volume.bytesPerSector);
