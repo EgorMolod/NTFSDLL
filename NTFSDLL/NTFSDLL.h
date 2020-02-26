@@ -35,6 +35,8 @@ typedef struct {
 	WORD endMarker;
 }NTFS;
 
+//This from second_master
+
 #pragma pack()
 extern "C++" NTFS_Info_API void NTFS_function(std::string diskName);
 extern "C++" NTFS_Info_API std::string getVolumeFileSystemName(std::string diskName);
