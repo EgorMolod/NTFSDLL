@@ -35,3 +35,9 @@ typedef struct {
 	WORD endMarker;
 }NTFS;
 
+#pragma pack()
+extern "C++" NTFS_Info_API void NTFS_function(std::string diskName);
+extern "C++" NTFS_Info_API std::string getVolumeFileSystemName(std::string diskName);
+extern "C++" NTFS_Info_API bool checkVolumeFS(std::string fsName);
+extern "C++" NTFS_Info_API bool getMBRInf(std::string diskName, NTFS * volume);
+extern "C++" NTFS_Info_API void showFAT32MBR(NTFS volume);
